@@ -1,0 +1,126 @@
+body{
+  background-color: rgba(63, 165, 233, 0.76);
+  margin-top: 300px;
+}
+
+.allslime{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+}
+.slimebody {
+  background-color: rgba(110,193,89,255);
+  width: 500px;
+  height: 500px;
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;   
+  align-items: center;    
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+
+
+.slimebody2 {
+  background-color: rgba(86,162,62,255);
+  width: 450px;
+  height: 450px;
+  text-align: center;
+  display: flex;
+  justify-content: center;   
+  align-items: center;   
+  gap: 100px;   
+   
+}
+
+
+.slimeeye1, .slimeeye2{
+border: 1px solid black;
+background-color: rgba(82,135,63,255);
+width: 160px;
+height: 150px;
+animation: piscar 4s ease-in-out infinite;
+}
+@keyframes piscar {
+  0%, 100% {
+    height: 150px; 
+  }
+  50% {
+    height: 0;
+  }
+}
+.slimemouth{
+  position: absolute;
+  background-color: rgba(82,135,63,255);
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 0 0 50px 50px;
+  bottom: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ficha-bubu {
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  font-family: 'Comic Sans MS', sans-serif;
+  font-size: 16px;
+  color: #2e2e2e;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+.ficha-bubu p {
+  margin-bottom: 10px;
+}
+.ficha-bubu strong {
+  color: #3d7a32;
+}
+
+
+h1{
+  font-family: 'Comic Sans MS', sans-serif;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.fofurinhas {
+  position: fixed;
+  top: 60px;
+  right: 30px;
+  width: 120px;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  z-index: 999;
+}
+
+.fofurinhas img.fofa {
+  cursor: pointer;
+  width: 80px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.fofurinhas img.fofa:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.ficha-bubu:hover {
+  cursor: pointer;
+  transform: scale(1.1) rotate(2deg);
+}
